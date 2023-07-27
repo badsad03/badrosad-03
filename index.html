@@ -9,6 +9,17 @@
         <meta property = "og: image" content = "styles/favicon.ico"/>
 
 
+        <b:if cond='data:blog.postImageThumbnailUrl'>
+<meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
+<b:else/>
+<meta content='https://lh6.googleusercontent.com/-Gqxzyx1D-qM/Sd6gUSMyvxI/AAAAAAAAAIA/67EBdl4ZQ2k/w354-h472-no/Holland1.jpg' property='og:image'/>
+</b:if>
+<b:if cond='data:blog.metaDescription != &quot;&quot;'>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+</b:if>
+<meta expr:content='data:blog.pageName' property='og:title'/>
+
+
 
 
     </head>
